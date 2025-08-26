@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>genshin loading page</title>
+        <link rel="stylesheet" href="first.css">
+        <link rel="icon" href="images/Genshin_Impact_Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <style>
+            nav.scrolled {
+            background: linear-gradient(to right, white, black, white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="images/Genshin_Impact_Logo.png" alt="logo" class="log">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#mond">MONDSTADTH</a></li>
+                    <li><a href="#liyue" class="lili">LIYUE</a></li>
+                    <li><a href="#inazuma" class="ini">INAZUMA</a></li>
+                    <li><a href="#sum" class="sumu">SUMERU</a></li>
+                    <li><a href="#fontaine" class="font">FONTAINE</a></li>
+                    <li><a href="#natlan" class="natl">NATLAN</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="home" id="home">
+                <div class="container">
+                    <h1>HELLO TRAVELLER</h1>
+                    <h2>Welcome to Teyvat</h2>
+                </div>
+            </div>
+            <div class="mond" id="mond">
+                <h1 class="mondi">MONDSTADTH</h1>
+                <img src="images/mond1.jpg">
+                <img src="images/mond 2.jpg">
+                <img src="images/mond 3.jpg">
+                <img src="images/mond 4.jpg">
+                <img src="images/mond 5.jpg">
+            </div>
+            <div class="liyue" id="liyue">
+                <h1 class="lilil">LIYUE</h1>
+                <img src="images/li 1.jpg">
+                <img src="images/li 2.jpg">
+                <img src="images/li 3.jpg">
+                <img src="images/li 4.jpg">
+                <img src="images/li 5.jpg">
+            </div>
+            <div class="inazuma" id="inazuma">
+                <h1 class="inin">INAZUMA</h1>
+                <img src="images/in 1.jpg">
+                <img src="images/in 2.jpg">
+                <img src="images/in 3.jpg">
+                <img src="images/in 4.jpg">
+                <img src="images/in 5.jpg">
+                <img src="images/in 6.jpg">
+            </div>
+            <div class="sum" id="sum">
+                <h1 class="susu">SUMERU</h1>
+                <img src="images/sumeru.png">
+                <img src="images/sum 2.jpg">
+                <img src="images/sum 3.jpg">
+                <img src="images/sum 4.jpg">
+                <img src="images/sum 5.jpg">
+                <img src="images/sum 6.jpg">
+            </div>
+            <div class="fontaine" id="fontaine">
+                <h1 class="fanta">FONTAINE</h1>
+                <img src="images/fon 6.png">
+                <img src="images/fon 2.jpg">
+                <img src="images/fon 3.jpg">
+                <img src="images/fon 4.jpg">
+                <img src="images/fon 1.jpg">
+                <img src="images/fon 5.jpg">
+            </div>
+            <div class="natlan" id="natlan">
+                <h1 class="nini">NATLAN</h1>
+                <img src="images/nat 1.jpg">
+                <img src="images/nat 2.jpg">
+                <img src="images/nat 3.jpg">
+                <img src="images/nat 4.jpg">
+                <img src="images/nat 5.jpg">
+            </div>
+
+            <script>
+    // Scroll effect
+            window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+            });
+
+    // Mobile toggle
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector("nav ul");
+
+            menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            });
+  </script>
+    </body>
+</html>
